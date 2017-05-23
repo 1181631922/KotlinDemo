@@ -51,7 +51,7 @@ open class BaseActivity : AppCompatActivity(), View.OnClickListener {
             }
             if (isSetNavigationIcon) {
                 //                由于要兼容低版本，所以采用这个划杠的方法，需要自己根据需求替换图片
-                toolbar!!.navigationIcon = resources.getDrawable(R.mipmap.ic_launcher)
+                toolbar!!.navigationIcon = resources.getDrawable(R.drawable.back)
                 toolbar!!.setNavigationOnClickListener { finish() }
             }
             if (isSetLogo) {

@@ -31,6 +31,12 @@
             android:layout_height="wrap_content"
             android:text="第一个按钮" />
 
+        <Button
+            android:id="@+id/btnShow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="列表页面" />
+
 
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>
