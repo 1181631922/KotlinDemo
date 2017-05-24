@@ -14,7 +14,39 @@ object BasicSyntax {
 
 //        println(BasicSyntax.maxOf(4, 9))
 
-        println(BasicSyntax.paraseInt("4"))
+//        println(BasicSyntax.paraseInt("4"))
+//        println(BasicSyntax.paraseInt(""))
+
+        BasicSyntax.testFor()
+    }
+
+    fun testFor() {
+        val items = listOf("a", "b", "c", "d", "e")
+
+        for (index in items.indices) {
+            println(items[index])
+        }
+
+        for (item in items) {
+            println(item)
+        }
+
+        for (i in 1..6) {
+            println(i)
+        }
+
+        for (i in 1 until 6) {
+            println(i)
+        }
+
+        for (i in 1..6 step 2) {
+            println(i)
+        }
+
+        for (i in 6 downTo 0 ) {
+            println(i)
+        }
+
     }
 
     fun paraseInt(str: String): Int? {

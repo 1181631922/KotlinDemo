@@ -66,4 +66,62 @@ if的话相比之下还是一样的，但是switch区别比较大
 
 ### 4.使用可空变量以及控制检查
 
+```@JvmStatic fun main(args: Array<String>) {
+   //        println(BasicSyntax.sum(4, 5))
+   //        BasicSyntax.printSum(5, 6)
+
+   //        BasicSyntax.args()
+
+   //        println(BasicSyntax.maxOf(4, 9))
+
+           println(BasicSyntax.paraseInt("4"))
+           println(BasicSyntax.paraseInt(""))
+       }
+
+       fun paraseInt(str: String): Int? {
+           return str.toIntOrNull()
+       }
+ ```
+
+ 这样的话如果是空值会返回null，判断非空和平常android的写法一样
+
+ ### 5.循环
+
+ ```fun testFor() {
+            val items = listOf("a", "b", "c", "d", "e")
+
+            for (index in items.indices) {
+                println(items[index])
+            }
+
+            for (item in items) {
+                println(item)
+            }
+
+            for (i in 1..6) {
+                println(i)
+            }
+
+            for (i in 1 until 6) {
+                println(i)
+            }
+
+            for (i in 1..6 step 2) {
+                println(i)
+            }
+
+            for (i in 6 downTo 0 ) {
+                println(i)
+            }
+
+        }
+  ```
+
+  for循环的几个用法
+
+### 6.使用while循环
+
+
+
+
 
