@@ -17,7 +17,35 @@ object BasicSyntax {
 //        println(BasicSyntax.paraseInt("4"))
 //        println(BasicSyntax.paraseInt(""))
 
-        BasicSyntax.testFor()
+//        BasicSyntax.testFor()
+
+//        BasicSyntax.testWhile()
+
+        BasicSyntax.testSwitch()
+    }
+
+    fun testSwitch() {
+        var i = 4
+        when (i) {
+            1 -> {
+                println(1)
+            }
+            2 -> {
+                println(2)
+            }
+            else -> {
+                println("不是1和2")
+            }
+        }
+    }
+
+    fun testWhile() {
+        val items = listOf("a", "b", "c", "d", "e")
+        var index = 0
+        while (index < items.size) {
+            println(items[index])
+            index++
+        }
     }
 
     fun testFor() {
@@ -43,7 +71,7 @@ object BasicSyntax {
             println(i)
         }
 
-        for (i in 6 downTo 0 ) {
+        for (i in 6 downTo 0) {
             println(i)
         }
 

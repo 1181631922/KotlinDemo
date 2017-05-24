@@ -120,6 +120,33 @@ if的话相比之下还是一样的，但是switch区别比较大
   for循环的几个用法
 
 ### 6.使用while循环
+```fun testWhile() {
+           val items = listOf("a", "b", "c", "d", "e")
+           var index = 0
+           while (index < items.size) {
+               println(items[index])
+               index++
+           }
+       }
+```
+
+### 7.switch
+上文说了switch用when代替了
+```fun testSwitch() {
+           var i = 4
+           when (i) {
+               1 -> {
+                   println(1)
+               }
+               2 -> {
+                   println(2)
+               }
+               else -> {
+                   println("不是1和2")
+               }
+           }
+       }
+```
 
 
 
