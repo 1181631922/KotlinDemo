@@ -1,5 +1,6 @@
 # 基本语法
-kotlin的一些基本语法
+kotlin的一些基本语法<br>
+[代码位置](https://github.com/1181631922/KotlinDemo/blob/master/app/src/main/java/com/fanyafeng/kotlindemo/javatest/BasicSyntax.kt)
 
 ### 1.函数的定义
 
