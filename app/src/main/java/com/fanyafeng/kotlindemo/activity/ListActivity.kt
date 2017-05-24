@@ -39,12 +39,13 @@ class ListActivity : BaseActivity() {
         rvList = findViewById(R.id.rvList) as RecyclerView
         rvList!!.layoutManager = GridLayoutManager(this, 2, GridLayoutManager.VERTICAL, false)
         myListAdapter = MyListAdapter(this, listBeanList)
+        println()
     }
 
     //初始化数据
     private fun initData() {
         for (i in 0..5) {
-            listBeanList.add(ListBean("你好"))
+            listBeanList.add(ListBean("你好"+i))
         }
         rvList!!.adapter = myListAdapter
 
